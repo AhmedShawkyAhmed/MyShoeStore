@@ -6,5 +6,5 @@ import com.shawky.myshoestore.Shoe
 
 
 class SharedViewModel : ViewModel() {
-    val shoe = Shoe()
+    val shoe = MutableLiveData<Shoe>()
 }

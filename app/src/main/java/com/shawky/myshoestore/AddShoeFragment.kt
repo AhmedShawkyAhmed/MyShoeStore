@@ -14,7 +14,7 @@ import com.shawky.myshoestore.databinding.FragmentAddShoeBinding
 class AddShoeFragment : Fragment() {
 
     private lateinit var binding: FragmentAddShoeBinding
-    private val viewModel: SharedViewModel by activityViewModels()
+    private lateinit var viewModel: SharedViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,7 +35,7 @@ class AddShoeFragment : Fragment() {
 
 
 
-        binding.addShoe = viewModel.shoe
+        binding.addShoe = viewModel
         return binding.root
     }
 

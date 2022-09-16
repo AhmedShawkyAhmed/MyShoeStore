@@ -9,7 +9,7 @@
 
         <variable
             name="addShoe"
-            type="com.shawky.myshoestore.Shoe" />
+            type="com.shawky.myshoestore.SharedViewModel" />
     </data>
 
    <ScrollView
@@ -55,7 +55,7 @@
                android:layout_marginBottom="@dimen/side_margin"
                android:ems="10"
                android:hint="@string/shoe_hint"
-               android:text="@={addShoe.name}"
+               android:text="@={addShoe.shoe.name}"
                android:importantForAutofill="no"
                android:inputType="textPersonName"
                android:textColorHighlight="@color/blue"
@@ -82,7 +82,7 @@
                android:layout_marginBottom="@dimen/side_margin"
                android:ems="10"
                android:hint="@string/company_hint"
-               android:text="@={addShoe.company}"
+               android:text="@={addShoe.shoe.company}"
                android:importantForAutofill="no"
                android:inputType="textPersonName"
                android:textColorHighlight="@color/blue"
@@ -110,7 +110,7 @@
                android:ems="10"
                android:inputType="number"
                android:hint="@string/shoe_size_hint"
-               android:text="@={addShoe.size}"
+               android:text="@={addShoe.shoe.size}"
                android:importantForAutofill="no"
                android:textColorHighlight="@color/blue"
                android:textColorHint="#78909C"
@@ -137,6 +137,7 @@
                android:ems="10"
                android:hint="@string/description_hint"
                android:importantForAutofill="no"
+               android:text="@={addShoe.shoe.description}"
                android:inputType="textPersonName"
                android:textColorHighlight="@color/blue"
                android:textColorHint="#78909C"
