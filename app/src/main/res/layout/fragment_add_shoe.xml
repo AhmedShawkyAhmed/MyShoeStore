@@ -15,6 +15,9 @@
    <ScrollView
        android:layout_width="match_parent"
        android:layout_height="match_parent">
+<!--
+    Linear Layout to hold the items of the shoe details fragment
+    -->
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content"

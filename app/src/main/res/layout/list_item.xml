@@ -10,6 +10,10 @@
             type="com.shawky.myshoestore.Shoe" />
     </data>
 
+<!--
+    Linear Layout to set the layout to vertical
+    -->
+
     <LinearLayout
         android:id="@+id/list_item"
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,6 +22,10 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+<!--
+    Linear Layout to set the layout to horizontal to add the shoe list item next to each other
+    -->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,6 +40,10 @@
                 android:layout_height="100dp"
                 android:contentDescription="@string/welcomeImage"
                 app:srcCompat="@drawable/shoe" />
+
+<!--
+    Linear Layout to set the layout to vertical to set the text of name, company, size under each other
+    -->
 
             <LinearLayout
                 android:layout_width="wrap_content"
