@@ -23,13 +23,18 @@ class AddShoeFragment : Fragment() {
     ): View {
         binding = FragmentAddShoeBinding.inflate(layoutInflater)
 
-        binding.cancelButton.setOnClickListener{
-                findNavController().navigateUp()
+        binding.cancelButton.setOnClickListener{ view: View ->
+            Navigation.findNavController(view)
+                .navigate(R.id.action_addShoeFragment_to_shoeListFragment)
         }
-        binding.saveButton.setOnClickListener{
+        binding.saveButton.setOnClickListener{ view: View ->
             (activity as MainActivity?)!!.addNewItem()
-            findNavController().navigateUp()
+            Navigation.findNavController(view)
+                .navigate(R.id.action_addShoeFragment_to_shoeListFragment)
         }
+
+
+
         binding.addShoe = viewModel.shoe
         return binding.root
     }
