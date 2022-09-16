@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="hint_email">examble@gmail.com</string>
+    <string name="hint_password">*********************</string>
+    <string name="welcomeImage">Welcome Image</string>
+    <string name="welcome_text">Welcome To My Shoe Store</string>
+    <string name="start">Start Your Shopping</string>
+    <string name="next">Next</string>
+    <string name="start_button">Start</string>
+    <string name="instructions_title">Read The Instructions to Start</string>
+    <string name="instructions_text">When you Start you will see my list of Shoes Displayed in the Home Screen and a Button to Add a New Shoe that will Navigate you to a Form To Add the New Shoe and Return to the Home Screen, And if you Closed the App The Data you Added Will Disappear.</string>
+    <string name="save">Save</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="shoe_hint">Air Force</string>
+    <string name="company_hint">Adidas</string>
+    <string name="shoe_size_hint">42</string>
+    <string name="description_hint">A shoe is an item of footwear intended to protect and comfort the human foot.They are often worn with a sock.</string>
+    <string name="add_new_shoe">Add New Shoe</string>
+    <string name="logout">Logout</string>
+</resources>

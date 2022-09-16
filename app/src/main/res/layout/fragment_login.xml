@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@string/email"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="@dimen/side_margin"
+            android:ems="10"
+            android:hint="@string/hint_email"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorHighlight="@color/blue"
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/text_size"
+            tools:ignore="LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:text="@string/password"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_margin"
+            android:layout_marginEnd="@dimen/side_margin"
+            android:layout_marginBottom="100dp"
+            android:ems="10"
+            android:hint="@string/hint_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/blue"
+            android:textColorHint="#78909C"
+            android:textSize="@dimen/text_size"
+            tools:ignore="LabelFor" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/button_margin"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            app:backgroundTint="@color/blue"
+            app:cornerRadius="@dimen/radius" />
+    </LinearLayout>
+
+</layout>

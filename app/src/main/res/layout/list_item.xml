@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <import type="com.shawky.myshoestore.Shoe"/>
+        <import type="com.shawky.myshoestore.IntConverter"/>
+
+        <variable
+            name="shoe"
+            type="com.shawky.myshoestore.Shoe" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/list_item"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables,UselessParent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/welcomeImage"
+                app:srcCompat="@drawable/shoe" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{shoe.name}"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/item_company_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{shoe.company}"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/item_size_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{shoe.size}"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.shawky.myshoestore.Shoe"/>
+
+        <variable
+            name="shoe"
+            type="com.shawky.myshoestore.Shoe" />
+    </data>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:id="@+id/linearLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center">
+
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/toolBar"
+              android:layout_width="match_parent"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+              app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+              android:layout_height="?attr/actionBarSize"
+              tools:ignore="MissingConstraints"
+              android:background="@color/blue"/>
+
+          <ListView
+              android:id="@+id/my_shoe_list"
+              android:layout_width="wrap_content"
+              android:layout_height="100dp"
+              tools:ignore="NestedScrolling"
+              tools:listitem="@layout/list_item" />
+
+          <com.google.android.material.floatingactionbutton.FloatingActionButton
+              android:id="@+id/add_shoe_button"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:contentDescription="@string/add_new_shoe"
+              android:focusable="true"
+              android:src="@drawable/ic_add"
+              app:backgroundTint="@color/blue" />
+      </LinearLayout>
+  </ScrollView>
+
+</layout>

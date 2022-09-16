@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top">
+
+
+        <ImageView
+            android:id="@+id/noBoardingImage"
+            android:layout_width="match_parent"
+            android:layout_height="392dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/welcomeImage"
+            android:maxHeight="350dp"
+            android:minHeight="400dp"
+            android:src="@drawable/shoe" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/welcome_text"
+            android:textAlignment="center"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/start_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/start"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            app:backgroundTint="@color/blue"
+            app:cornerRadius="@dimen/radius" />
+    </LinearLayout>
+
+</layout>
