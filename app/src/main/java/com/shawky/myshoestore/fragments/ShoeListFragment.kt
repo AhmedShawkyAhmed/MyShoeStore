@@ -1,19 +1,18 @@
-package com.shawky.myshoestore
+package com.shawky.myshoestore.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.shawky.myshoestore.R
+import com.shawky.myshoestore.viewModel.SharedViewModel
 import com.shawky.myshoestore.databinding.FragmentShoeListBinding
 
 class ShoeListFragment : Fragment() {

@@ -1,8 +1,8 @@
-package com.shawky.myshoestore
+package com.shawky.myshoestore.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.shawky.myshoestore.Shoe
+import com.shawky.myshoestore.model.Shoe
 
 
 class SharedViewModel : ViewModel() {

@@ -2,12 +2,12 @@
 <layout>
 
     <data>
-        <import type="com.shawky.myshoestore.Shoe"/>
+        <import type="com.shawky.myshoestore.model.Shoe"/>
         <import type="com.shawky.myshoestore.IntConverter"/>
 
         <variable
             name="shoe"
-            type="com.shawky.myshoestore.SharedViewModel" />
+            type="com.shawky.myshoestore.viewModel.SharedViewModel" />
     </data>
 
 <!--

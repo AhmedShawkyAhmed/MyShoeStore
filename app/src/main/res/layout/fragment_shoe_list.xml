@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="com.shawky.myshoestore.Shoe"/>
+        <import type="com.shawky.myshoestore.model.Shoe"/>
 
         <variable
             name="shoe"
-            type="com.shawky.myshoestore.SharedViewModel" />
+            type="com.shawky.myshoestore.viewModel.SharedViewModel" />
     </data>
 
   <ScrollView

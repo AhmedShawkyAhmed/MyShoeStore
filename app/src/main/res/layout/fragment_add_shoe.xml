@@ -4,12 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <import type="com.shawky.myshoestore.Shoe"/>
+        <import type="com.shawky.myshoestore.model.Shoe"/>
         <import type="com.shawky.myshoestore.IntConverter"/>
 
         <variable
             name="addShoe"
-            type="com.shawky.myshoestore.SharedViewModel" />
+            type="com.shawky.myshoestore.viewModel.SharedViewModel" />
     </data>
 
    <ScrollView

@@ -1,4 +1,4 @@
-package com.shawky.myshoestore
+package com.shawky.myshoestore.model
 
 data class Shoe(
     var name: String = "",
