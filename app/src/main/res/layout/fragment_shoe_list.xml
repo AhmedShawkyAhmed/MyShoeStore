@@ -8,7 +8,7 @@
 
         <variable
             name="shoe"
-            type="com.shawky.myshoestore.viewModel.SharedViewModel" />
+            type="com.shawky.myshoestore.model.Shoe" />
     </data>
 
   <ScrollView

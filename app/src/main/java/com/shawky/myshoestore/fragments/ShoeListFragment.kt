@@ -6,6 +6,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
@@ -14,18 +16,16 @@ import androidx.navigation.ui.NavigationUI
 import com.shawky.myshoestore.R
 import com.shawky.myshoestore.viewModel.SharedViewModel
 import com.shawky.myshoestore.databinding.FragmentShoeListBinding
+import com.shawky.myshoestore.databinding.ListItemBinding
 
 class ShoeListFragment : Fragment() {
 
     private lateinit var binding: FragmentShoeListBinding
-    private lateinit var viewModel: SharedViewModel
+    private val viewModel: SharedViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setHasOptionsMenu(true)
         binding = DataBindingUtil.setContentView(requireActivity(), R.layout.activity_main)
-        viewModel = ViewModelProvider(this)[SharedViewModel::class.java]
-        binding.shoe = viewModel
-        binding.lifecycleOwner = this
         super.onCreate(savedInstanceState)
     }
 
@@ -35,6 +35,17 @@ class ShoeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentShoeListBinding.inflate(layoutInflater)
+        binding.lifecycleOwner = this
+        viewModel.shoeListLiveData.observe(viewLifecycleOwner, Observer { shoeList ->
+
+            for (shoe in shoeList) {
+
+                val shoeItem = ListItemBinding.inflate(layoutInflater)
+
+                shoeItem.shoe = shoe
+                binding.linearLayout.addView(shoeItem.root)
+            }
+        })
         binding.addShoeButton.setOnClickListener { view: View ->
             Navigation.findNavController(view)
                 .navigate(R.id.action_shoeListFragment_to_addShoeFragment)
